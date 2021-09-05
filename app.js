@@ -10,8 +10,6 @@ app.use(express.urlencoded({extended : true}))
 app.get("/", (req, res) =>  res.render("home", {columns : null, query : '', error : ''}))
 app.post("/", Controller.readData)
 
-// 
-
 app.listen(port, () => {
   console.log('Aplikasi berjalan')
 })
